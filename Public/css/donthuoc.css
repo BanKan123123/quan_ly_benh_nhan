@@ -1,0 +1,414 @@
+@import url('http://localhost/ManagerPatientPHP/Public/css/variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+th {
+    color: #676767;
+}
+
+td {
+    color: #666;
+}
+
+.col-2 {
+    width: 20%;
+    margin-right: 2px;
+}
+
+.col-1 {
+    width: 10%;
+    margin-right: 2px;
+}
+
+.col-1-2 {
+    width: 5%;
+    margin-right: 2px;
+}
+
+.col-1-4 {
+    width: 2.5%;
+    margin-right: 2px;
+    ;
+}
+
+.main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 4.75px;
+    margin: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.5px;
+    align-items: start;
+    margin-left: 13px;
+}
+
+.name__page {
+    color: var(--text-color);
+    font-size: 17.55px;
+    font-weight: 600;
+    margin-bottom: 7.5px;
+}
+
+.desc__page,
+.btn--add {
+    font-size: 12.35px;
+    color: var(--text-color-sub);
+    font-weight: 500;
+}
+
+.btn--add {
+    width: 150px;
+    height: 33px;
+    background-color: #f5f8fa;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 4.75px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.btn--add:hover {
+    background-color: var(--btn-color);
+    color: #ffffff;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    height: 43px;
+    margin-bottom: 30px;
+}
+
+.main-functions,
+.search,
+.btn {
+    height: 100%;
+}
+
+.btn--pdf,
+.btn--excel {
+    background-color: #e4e6ef;
+}
+
+.main-functions {
+    display: flex;
+    border-radius: 4.75px;
+    overflow: hidden;
+}
+
+.btn {
+    flex: 1;
+    cursor: pointer;
+    width: 74px;
+    border: none;
+    /* background-color: #e4e6ef; */
+    transition: all 0.3s;
+}
+
+.btn span {
+    color: #3f4254;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.search__label,
+.btn span {
+    font-size: 14px;
+}
+
+.search__label,
+.search__input {
+    height: 35px;
+    line-height: 35px;
+    color: var(--text-color);
+}
+
+.search__input {
+    background-color: #e4e6ef;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    border-radius: 4.75px;
+}
+
+.search__input::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888888b5;
+}
+
+.btnSearch {
+    height: 35px;
+    border-radius: 4.75px;
+    border: none;
+    background-color: #e4e6ef;
+    padding: 0 5px;
+}
+
+.namebenhnhan {
+    border: none;
+    background-color: #f5f8fa;
+    border-color: #f5f8fa;
+    font-size: 16px;
+    height: 40.5px;
+    line-height: 40.5px;
+    padding: 9.75px 0px;
+    border-radius: 4.75px;
+    color: #333;
+}
+
+.form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.appear {
+    display: flex;
+}
+
+.modal-dialog {
+    background-color: #ffffff;
+    border-radius: 4.75px;
+}
+
+.modal-content {
+    padding: 30px;
+    width: 650px;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 5px;
+
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 19.5px;
+    color: var(--text-color);
+}
+
+.close {
+    display: block;
+    padding: 5px;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+.close svg rect {
+    transition: all 0.3s ease;
+}
+
+.close:hover svg rect {
+    fill: #009ef7;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px 0px 25px 15px;
+}
+
+.row__1,
+.row__2,
+.row__3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.expiration__date {
+    margin-bottom: 15px;
+}
+
+.name_medicine__label,
+.expiration__date__label,
+.supplier__label,
+.id_medicine__label,
+.quantity__label,
+.price__label,
+.drug__content__label,
+.dosage__forms__label,
+.route_of_use__label,
+.note__label {
+    display: flex;
+    align-items: center;
+}
+
+.require {
+    text-align: center;
+    color: #f1416c;
+    line-height: 16.364px;
+    margin-left: 3.25px;
+}
+
+.name_medicine {
+    width: 368.25px;
+    padding: 0 14.625px;
+}
+
+#txtNameMedicine {
+    width: 340.25px;
+    padding: 9.75px 13px;
+}
+
+.id_medicine,
+.dosage__forms,
+.expiration__date,
+.supplier,
+.drug__content,
+.drug__content,
+.route_of_use,
+.quantity,
+.price {
+    width: 170px;
+    padding: 0 14.625px;
+}
+
+.name_medicine__label p,
+.note__label p,
+.expiration__date__label p,
+.supplier__label p,
+.quantity__label p,
+.price__label p,
+.drug__content__label p,
+.dosage__forms__label p,
+.route_of_use__label p,
+.id_medicine__label p {
+    color: #5e6278;
+    font-weight: 500;
+}
+
+.note {
+    padding: 0 14.625px;
+}
+
+#txtNote {
+    width: 539px;
+    padding: 9.75px 13px;
+    margin-top: 6.5px;
+}
+
+#txtNameMedicine,
+#txtSupplier,
+#txtexpirationDate,
+#txtIdMedicine,
+#txtDosageForms,
+#txtDrugContent,
+#txtRouteOfUse,
+#txtQuantity,
+#txtPrice,
+#txtNote,
+#txtNote {
+    display: block;
+    height: 40.5px;
+    border-radius: 4.25px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: #f5f8fa;
+    border-color: #f5f8fa;
+    color: #333;
+}
+
+#txtPrice,
+#txtSupplier,
+#txtexpirationDate,
+#txtQuantity,
+#txtRouteOfUse,
+#txtDrugContent,
+#txtDosageForms,
+#txtIdMedicine {
+    width: 141.5px;
+    padding: 9.75px 13px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-btn {
+    cursor: pointer;
+    height: 43px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 20.5px;
+    border: none;
+    border-radius: 4.25px;
+}
+
+.btn-cancel {
+    background-color: #f5f8fa;
+    margin-right: 9.75px;
+    border-color: #f5f8fa;
+    transition: all 0.3s ease-in;
+}
+
+.btn-cancel:hover {
+    background-color: #d1d5d6;
+    color: #888;
+}
+
+.btn-add {
+    background-color: #009ef7;
+    color: #ffffff;
+    transition: all 0.3s ease-in;
+}
+
+.btn-add:hover {
+    background-color: #0372b1;
+}
+
+.form-control {
+    width: 250px;
+}
+
+.mb-3 {
+    margin: 0 10px;
+}
+
+.btn--excel:hover,
+.btn--pdf:hover {
+    background-color: #88888890;
+}
+
+.form-control::placeholder {
+    font-size: 14px;
+    color: #6767675d;
+}
+
+.form-label {
+    color: #676767;
+    font-weight: 500;
+}
+
+.form-select {
+    width: 250px;
+}

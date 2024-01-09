@@ -1,0 +1,171 @@
+
+@import url('http://localhost/ManagerPatientPHP/Public/css/variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form__edit {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 4.75px;
+    margin: 20px 30px;
+}
+
+.modal-dialog {
+    background-color: #ffffff;
+    width: 643px;
+    border-radius: 4.75px;
+}
+
+.modal-content {
+    padding: 30px;
+    float: left;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title {
+    font-size: 19.5px;
+    color: var(--text-color);
+}
+
+.close {
+    display: block;
+    padding: 5px;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+.close svg rect {
+    transition: all 0.3s ease;
+}
+
+.close:hover svg rect{
+    fill: #009ef7;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px 0px 25px 15px;
+}
+
+.row__1, .row__2, .row__3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.expiration__date {
+    margin-bottom: 20px;
+}
+
+.name_medicine__label, .expiration__date__label, .supplier__label, .id_medicine__label, .quantity__label, .price__label, .drug__content__label, .dosage__forms__label, .route_of_use__label {
+    display: flex;
+    align-items: center;
+}
+
+.require {
+    text-align: center;
+    color: #f1416c;
+    line-height: 16.364px;
+    margin-left: 3.25px;
+}
+
+.name_medicine {
+    width: 368.25px;
+    padding: 0 14.625px;
+}
+
+#txtNameMedicine {
+    width: 340.25px;
+    padding: 9.75px 13px;
+}
+
+.id_medicine, .dosage__forms, .expiration__date, .supplier, .drug__content, .drug__content, .route_of_use, .quantity, .price {
+    width: 170px;
+    padding: 0 14.625px;
+}
+
+.name_medicine__label p, .note__label p, .expiration__date__label p, .supplier__label p, .quantity__label p, .price__label p, .drug__content__label p, .dosage__forms__label p, .route_of_use__label p, .id_medicine__label p {
+    color: #5e6278;
+    font-weight: 500;
+}
+
+#txtNote {
+    width: 539px;
+    padding: 9.75px 13px;
+    margin-top: 6.5px;
+}
+
+#txtNameMedicine, #txtSupplier, #txtexpirationDate, #txtIdMedicine, #txtDosageForms, #txtDrugContent, #txtRouteOfUse, #txtQuantity, #txtPrice, #txtNote, #txtNote {
+    display: block;
+    height: 40.5px;
+    border-radius: 4.25px;
+    margin-top: 6.5px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: #f5f8fa;
+    border-color: #f5f8fa;
+}
+
+#txtPrice, #txtSupplier, #txtexpirationDate, #txtQuantity, #txtRouteOfUse, #txtDrugContent, #txtDosageForms, #txtIdMedicine {
+    width: 141.5px;
+    padding: 9.75px 13px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.expiration__date {
+    padding: 0;
+    margin-left: 16px;
+}
+
+.note {
+    padding: 0;
+    margin-left: 16px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 15px;
+}
+
+.btnCancel, .btnSave {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    border-radius: 4.75px;
+    background-color: #f5f8fa;
+    border-color: #f5f8fa;
+    line-height: 35px;
+    text-align: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.btnCancel {
+    border-color: #f5f8fa;
+    margin-right: 15px;
+}
+
+.btnSave {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #009ef7;
+    color: #ffffff;
+}

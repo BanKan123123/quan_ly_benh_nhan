@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #9899ac;
+}
+
+a {
+    color: #9899ac;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+}
+
+.category {
+    width: 265px;
+    background-color: #1e1e2d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header img {
+    width: 140px;
+}
+
+.icon-nav {
+    width: 120px;
+    height: 40px;
+    margin-left: 42px;
+    transform: rotate(180deg);
+}
+
+.nav-container {
+    width: 100%;
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.nav-container::-webkit-scrollbar-thumb {
+    color: #1e1e2d;
+}
+
+.nav-container::-webkit-scrollbar {
+    width: 1px;
+    border-radius: 2px;
+}
+
+lord-icon.container-icon {
+    width: 22px;
+}
+
+.container-arrow {
+    margin-left: auto;
+    width: 20px;
+}
+
+.nav-container-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 20px;
+}
+
+.menu-sub {
+    top: 30px;
+    width: 100%;
+    display: block;
+}
+
+.sub-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 30px;
+}
+
+.sub-item:hover {
+    background-color: #7273921b;
+}
+
+.sub-item:hover a {
+    color: #fff;
+}
+
+
+.nav-container-item:hover {
+    background-color: #7273921b;
+}
+
+.nav-container-item:hover a {
+    color: #fff;
+}
+
+lord-icon.container-icon {
+    width: 23px;
+}
+
+.features {
+    width: 100%;
+}
+
+.features h3 {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav-footer {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-footer button {
+    height: 40px;
+    background-color: #2b2b31;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #ccc;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-footer button:hover {
+    color: #fff
+}
+
+tr {
+    height: 60px;
+    position: relative;
+}
+
+.search__input {
+    padding-left: 10px;
+}
+
+.search__input::placeholder {
+    font-size: 13px;
+    font-weight: 600;
+    color: #cfcfcd;
+}

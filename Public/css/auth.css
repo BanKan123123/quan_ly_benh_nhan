@@ -1,0 +1,111 @@
+@import url('http://localhost/ManagerPatientPHP/Public/css/reset.css');
+@import url('http://localhost/ManagerPatientPHP/Public/css/base.css');
+
+.auth-container {
+    display: flex;
+    align-items: center;
+}
+
+.container-left {
+    width: 50%;
+    background-image: url('http://localhost/ManagerPatientPHP/Public/img/menu-header-dark.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+    text-align: center;
+    color: #fff;
+}
+
+.container-left::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 10px;
+}
+
+.container-left::-webkit-scrollbar-thumb {
+    background-color: #cccd;
+}
+
+.container-left h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+
+.container-left h3 {
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(225, 225, 225, 0.867);
+}
+
+.container-right {
+    width: 50%;
+    color: #000;
+    max-height: 750px;
+    overflow-y: scroll;
+}
+
+.container-right::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 10px;
+}
+
+.container-right::-webkit-scrollbar-thumb {
+    background-color: #cccd;
+}
+
+
+.container-right h1 {
+    font-size: 25px;
+    font-weight: 800;
+    margin: 15px 0;
+    text-align: Center;
+}
+
+.container-right h3 {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: Center;
+}
+
+.container-right form {
+    padding: 40px 100px;
+}
+
+.container-right form h3 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-signUp {
+    padding: 20px 100px !important;
+}
+
+.container-right form .form-label {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.container-right form .form-control {
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.container-right form .form-check-label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.container-right form .form-control::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+    color: #919191;
+}
+
+.btn-signIn {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+}
